@@ -56,8 +56,8 @@ img_evaluator/
 
 \`ash
 # 克隆项目
-git clone <repository-url>
-cd img_evaluator
+- git clone https://github.com/peknic/NSFW_Illus_evaluator.git
+- cd img_evaluator
 
 # 创建虚拟环境（推荐）
 python -m venv .venv
