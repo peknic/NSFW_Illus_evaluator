@@ -1,0 +1,4 @@
+.venv/
+models/nsfw_detector/
+opencode.json
+project_plan.docx

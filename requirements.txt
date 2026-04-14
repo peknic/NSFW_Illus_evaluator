@@ -1,0 +1,30 @@
+﻿# 核心依赖
+torch>=2.3.0
+torchvision>=0.18.0
+
+# 图像处理
+opencv-python>=4.9.0
+Pillow>=10.0.0
+numpy>=1.24.0
+matplotlib>=3.8.0
+
+# 深度学习框架
+transformers>=4.40.0
+accelerate>=0.30.0
+
+# 计算机视觉模型
+# NudeNet v3 (插画优化版)
+nudenet>=2.0.0
+
+# Web UI
+gradio>=4.0.0
+
+# 工具库
+typing-extensions>=4.9.0
+tqdm>=4.66.0
+requests>=2.31.0
+
+# 开发工具 (可选)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
