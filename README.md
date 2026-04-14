@@ -24,30 +24,30 @@
 
 \`
 img_evaluator/
-├── src/                    # 核心源代码
-│   ├── inference.py       # 主推理模块
-│   ├── config.py          # 配置文件
-│   ├── model_manager.py   # 模型管理器
-│   └── __init__.py
-├── utils/                 # 工具函数
-│   ├── image_processor.py # 图像处理
-│   ├── score_calculator.py # 分数计算
-│   ├── comment_generator.py # 评价生成
-│   ├── visualization.py   # 可视化工具
-│   └── __init__.py
-├── gradio_app/            # Web UI 界面
-│   ├── app.py            # Gradio 应用
-│   ├── components.py     # UI 组件
-│   └── __init__.py
-├── models/               # 模型存储目录
-├── examples/             # 示例图片
-│   └── high_score/      # 高分示例图片
-├── tests/               # 单元测试
-├── main.py              # 命令行入口
-├── start_gradio.py      # Web UI 启动脚本
-├── requirements.txt     # Python 依赖
-├── MODEL_DOWNLOAD.md    # 模型下载说明
-└── README.md           # 项目说明（本文件）
+- ├── src/                    # 核心源代码
+- │   ├── inference.py       # 主推理模块
+- │   ├── config.py          # 配置文件
+- │   ├── model_manager.py   # 模型管理器
+- │   └── __init__.py
+- ├── utils/                 # 工具函数
+- │   ├── image_processor.py # 图像处理
+- │   ├── score_calculator.py # 分数计算
+- │   ├── comment_generator.py # 评价生成
+- │   ├── visualization.py   # 可视化工具
+- │   └── __init__.py
+- ├── gradio_app/            # Web UI 界面
+- │   ├── app.py            # Gradio 应用
+- │   ├── components.py     # UI 组件
+- │   └── __init__.py
+- ├── models/               # 模型存储目录
+- ├── examples/             # 示例图片
+- │   └── high_score/      # 高分示例图片
+- ├── tests/               # 单元测试
+- ├── main.py              # 命令行入口
+- ├── start_gradio.py      # Web UI 启动脚本
+- ├── requirements.txt     # Python 依赖
+- ├── MODEL_DOWNLOAD.md    # 模型下载说明
+- └── README.md           # 项目说明（本文件）
 \`
 
 ## 🚀 快速开始
@@ -88,7 +88,7 @@ python -m src.model_manager
 python start_gradio.py
 \`
 
-访问 \http://localhost:7860\ 使用图形界面。
+访问 \http://localhost:7861\ 使用图形界面。
 
 ### 4. 命令行使用
 
@@ -120,14 +120,15 @@ PART_THRESHOLD_ADJUSTMENTS = {
 \`
 
 ## 📊 输出示例
-
+![img.png](img.png)
 \`
-图片分析结果：
+- 图片分析结果：
 - 总体色气值: 89/100
 - 部位得分:
-  * 胸部: 92/100
-  * 臀部: 85/100  
-  * 脸部: 45/100
+  * 腰部 ■■■■■■■■ 86/100
+  * 胸部 ■■■■■■■■ 84/100
+  * 臀部 ■■■■■■■■ 81/100
+  * 私密部位 ■■■■■ 53/100
 - 评价: 哇这张色气值直接 89 分！胸部画得太犯规了～
 - 改进建议: 可以适当降低胸部尺寸，增加一些衣物细节
 \`
