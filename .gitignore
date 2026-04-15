@@ -1,4 +1,6 @@
 .venv/
 models/nsfw_detector/
+models/SDPose-OOD/
+models/SDPose-Wholebody/
 opencode.json
 project_plan.docx

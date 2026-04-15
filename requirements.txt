@@ -28,3 +28,15 @@ requests>=2.31.0
 pytest>=7.4.0
 black>=23.0.0
 flake8>=6.0.0
+
+# -- 第二阶段：姿态色气评分模块（SDPose-Wholebody）--
+# SDPose-OOD 项目依赖（必须安装）
+ultralytics>=8.2.0        # YOLO11-x 人体检测
+diffusers>=0.30.0         # Stable Diffusion U-Net backbone
+mmengine>=0.10.0          # MMEngine 基础库
+mmcv-lite>=2.0.0          # 轻量级 OpenMMLab CV 库（mmcv-full 的纯 Python 替代）
+# 以下为 mmpose（已内置）的运行时依赖
+munkres>=1.1.4            # 匈牙利算法匹配（关键点关联）
+xtcocotools>=1.14.0       # COCO 评估工具扩展版
+# 注意：mmpose 已作为子模块包含在 models/SDPose-OOD/ 中，无需单独安装
+# 原 DWPose ONNX 运行时已移除，若需回退请安装 onnxruntime-gpu>=1.18.0
